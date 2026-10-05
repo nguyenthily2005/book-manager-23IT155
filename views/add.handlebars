@@ -1,0 +1,13 @@
+<h2>Thêm sách mới</h2>
+{{#if error}}<p class="err">{{error}}</p>{{/if}}
+<form method="POST" action="/add">
+  <label>Mã sản phẩm (bắt đầu bằng {{student.prefix}})</label>
+  <input name="maSP" value="{{form.maSP}}" placeholder="{{student.prefix}}-001" required>
+  <label>Tên sách</label>
+  <input name="tenSach" value="{{form.tenSach}}" required>
+  <label>Tác giả</label>
+  <input name="tacGia" value="{{form.tacGia}}">
+  <label>Giá gốc</label>
+  <input name="giaGoc" type="number" step="0.01" min="0" value="{{form.giaGoc}}" required>
+  <button type="submit">Lưu</button>
+</form>

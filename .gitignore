@@ -1,0 +1,18 @@
+@"
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+.vscode/
+.idea/
+"@ | Set-Content -Encoding utf8 .gitignore
+
+@"
+MONGO_URI_READ=
+MONGO_URI_WRITE=
+DB_NAME=DB_23IT155
+SESSION_SECRET=
+STUDENT_NAME=
+"@ | Set-Content -Encoding utf8 .env.example

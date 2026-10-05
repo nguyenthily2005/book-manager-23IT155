@@ -1,0 +1,12 @@
+<h2>Danh sách sách</h2>
+<table>
+  <tr><th>Mã SP</th><th>Tên sách</th><th>Tác giả</th><th>Giá gốc</th><th>VAT</th><th>Giá sau thuế</th></tr>
+  {{#each books}}
+  <tr>
+    <td>{{this.maSP}}</td><td>{{this.tenSach}}</td><td>{{this.tacGia}}</td>
+    <td>{{this.giaGoc}}</td><td>{{this.vat}}%</td><td>{{this.giaSauThue}}</td>
+  </tr>
+  {{else}}
+  <tr><td colspan="6">Chưa có sách nào.</td></tr>
+  {{/each}}
+</table>
